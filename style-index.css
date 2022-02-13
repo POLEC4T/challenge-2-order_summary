@@ -1,0 +1,90 @@
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+
+
+main {
+    width: 400px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+main img {
+    width: 400px;
+}
+
+main div {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    
+    
+}
+
+main div h1 {
+    font-weight: 900;
+}
+
+main div p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+main div div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: brown;
+    padding: 10px;
+    background-color: var(--Very-pale-blue);
+}
+
+main div div p:nth-child(1) {
+    font-weight: 700;
+}
+
+main div div div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+    
+.attribution a { color: hsl(228, 45%, 44%); }
