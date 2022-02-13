@@ -13,7 +13,9 @@
     font-family: 'Red Hat Display', sans-serif;
 }
 
-
+body {
+    background-image: url();
+}
 
 
 main {
@@ -27,7 +29,6 @@ main {
     display: flex;
     flex-direction: column;
     
-
 }
 
 main img {
