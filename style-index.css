@@ -4,6 +4,7 @@
     --Very-pale-blue: hsl(225, 100%, 98%);
     --Desaturated-blue: hsl(224, 23%, 55%);
     --Dark-blue: hsl(223, 47%, 23%);
+    --taille:400px;
 }
 
 * {
@@ -20,7 +21,7 @@ body {
 }
 
 main {
-    width: 400px;
+    width: var(--taille);
     
     position: absolute;
     top:50%;
@@ -35,7 +36,7 @@ main {
 }
 
 main > img {
-    width: 400px;
+    width: var(--taille);
     border-radius: 15px 15px 0 0;
 }
 
@@ -53,7 +54,6 @@ main > div > h1 {
     font-weight: 900;
     margin: 15px;
     color: var(--Dark-blue);
-    
 }
 
 main div p {
@@ -103,6 +103,10 @@ main > div > div > div > p:nth-child(1) {
     font-weight: 900;
 }
 
+main > div > div > div > p:nth-child(2) {
+    color: var(--Desaturated-blue);
+}
+
 /* payment */
 
 
@@ -122,14 +126,10 @@ main > div > p > a {
     
 }
 
-main > div > p > a::after {
-    content: "";
-    background-color: aqua;
 
-    width: 400px;
-    height: 20px;
-
-    
+main > div > p:nth-child(5){
+    color: var(--Desaturated-blue);
+    font-weight: 700;
 }
 
 
