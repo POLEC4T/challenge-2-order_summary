@@ -19,10 +19,9 @@ body {
 
 }
 
-
 main {
     width: 400px;
-    height: 800px;
+    
     position: absolute;
     top:50%;
     left:50%;
@@ -30,11 +29,14 @@ main {
     display: flex;
     flex-direction: column;
     border-radius: 15px;
+    box-shadow: 0px 20px 100px -50px hsl(223, 47%, 23%, .50);
+    
+
 }
 
 main > img {
     width: 400px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 15px 15px 0 0;
 }
 
 main > div {
@@ -44,57 +46,90 @@ main > div {
     background-color: white;
     display: flex;
     flex-direction: column;
+    border-radius: 0 0 15px 15px;
 }
 
 main > div > h1 {
     font-weight: 900;
     margin: 15px;
+    color: var(--Dark-blue);
+    
 }
 
-main > div > p {
+main div p {
     font-weight: 500;
     font-size: 16px;
-    line-height: 22px;
-    margin-bottom:25px ;
+}
 
+main > div > p:nth-child(2) {
+    
+    line-height: 22px;
+    margin-bottom:25px;
+    color: var(--Desaturated-blue);
 }
 
 main > div > div {
     display: flex;
     
-    
     align-items: center;
     padding: 10px;
     background-color: var(--Very-pale-blue);
     border-radius: 10px;
+
+    margin-bottom: 25px;
 }
 
 main > div > div > img {
     width: 50px;
-    margin: 10px;
+    margin: 15px;
     height: auto;
 }
 
 main > div > div > a {
     position: absolute;
     right: 15%;
+    font-weight: 700;
+    color: var(--Bright-blue);
 }
-
-
-
-
-
 
 main > div > div > div {
     display: flex;
     flex-direction: column;
-    width: fit-content;
-    
+    justify-content: space-between;
+    align-items: flex-start;
 } 
 
-
 main > div > div > div > p:nth-child(1) {
+    font-weight: 900;
+}
+
+/* payment */
+
+
+main > div > p > a {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: var(--Bright-blue);
+    border-radius: 10px;
+    
+
+    color: white;
+    text-decoration: none;
     font-weight: 700;
+    box-shadow: 0px 15px 20px hsl(245, 75%, 52%, .30);;
+    
+}
+
+main > div > p > a::after {
+    content: "";
+    background-color: aqua;
+
+    width: 400px;
+    height: 20px;
+
+    
 }
 
 
