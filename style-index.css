@@ -19,12 +19,13 @@
 body {
     background-image: url(./images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: var(--Pale-blue)
 
 }
 
 main {
     width: 420px;
-    
     position: absolute;
     top:50%;
     left:50%;
