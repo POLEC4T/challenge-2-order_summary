@@ -7,6 +7,8 @@
     --taille:400px;
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +23,7 @@ body {
 }
 
 main {
-    width: var(--taille);
+    width: 375px;
     
     position: absolute;
     top:50%;
@@ -36,9 +38,10 @@ main {
 }
 
 main > img {
-    width: var(--taille);
+    width: 375px;
     border-radius: 15px 15px 0 0;
 }
+
 
 main > div {
     padding: 10%;
@@ -51,16 +54,19 @@ main > div {
     gap:25px;
 }
 
+/* order */
 main > div > h1 {
     font-weight: 900;
     color: var(--Dark-blue);
 }
 
+/* every text */
 main div p {
     font-weight: 500;
     font-size: 16px;
 }
 
+/* 3 lines text */
 main > div > p:nth-child(2) {
     
     line-height: 22px;
@@ -68,26 +74,35 @@ main > div > p:nth-child(2) {
     color: var(--Desaturated-blue);
 }
 
+/* middle square */
 main > div > div {
     display: flex;
     
     align-items: center;
     padding: 10px;
     background-color: var(--Very-pale-blue);
+    
     border-radius: 10px;
     gap: 10px;
+    justify-content: space-between;
     
 }
 
-main > div > div > img {
+/* left in middle square*/
+main > div > div > div {
+    display: flex;
+    
+    
+}
+
+main > div > div > div > img {
     width: 50px;
     margin: 10px;
     height: auto;
 }
 
 main > div > div > a {
-    position: absolute;
-    right: 15%;
+    margin: 10px;
     font-weight: 700;
     color: var(--Bright-blue);
 }
@@ -97,19 +112,21 @@ main > div > div > a:hover {
     text-decoration: none;
 }
 
-main > div > div > div {
+main > div > div > div > div {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 5px;
+    
+    
 } 
 
-main > div > div > div > p:nth-child(1) {
+main > div > div > div > div > p:nth-child(1) {
     font-weight: 900;
 }
 
-main > div > div > div > p:nth-child(2) {
+main > div > div > div > div > p:nth-child(2) {
     color: var(--Desaturated-blue);
 }
 
@@ -135,6 +152,7 @@ main > div > p:nth-child(4) > a:hover {
     transition: 150ms;
 }
 
+/* cancel */
 
 main > div > p:nth-child(5) > a{
     color: var(--Desaturated-blue);
@@ -147,10 +165,24 @@ main > div > p:nth-child(5) > a:hover {
     transition: 150ms;
 }
 
+/* responsive */
 
+@media screen and (max-width: 375px) {
+    
+    main {
+        width:330px;
+        
+    }
 
+    main img {
+        width:330px;
+    }
 
+    main > div { 
+        padding: 10% 7%;
+    }
 
+}
 
 .attribution { font-size: 11px; text-align: center; }
     
