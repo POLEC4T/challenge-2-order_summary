@@ -23,7 +23,7 @@ body {
 }
 
 main {
-    width: 375px;
+    width: 420px;
     
     position: absolute;
     top:50%;
@@ -38,7 +38,7 @@ main {
 }
 
 main > img {
-    width: 375px;
+    width: 420px;
     border-radius: 15px 15px 0 0;
 }
 
