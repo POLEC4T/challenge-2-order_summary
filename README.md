@@ -18,16 +18,10 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ## Overview
 
-### The challenge
-
-Users should be able to:
-
-- See hover states for interactive elements
-
 ### Screenshot
 
-![](./screenshot.jpg)
-![](./screenshot2.jpg)
+![](./screenshot.png)
+![](./screenshot2.png)
 
 ### Links
 
